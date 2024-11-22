@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The C - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="download.css">
+    <style>
+        /* Include CSS here */
+    </style>
+</head>
+<body>
+    <!-- Background Image Section -->
+    <div class="background-img"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">The C</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="download.html">Downloads</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Developer">Developer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to The C</h1>
+            <p class="lead">Your one-stop destination for learning C programming. Enhance your skills with our quality materials.</p>
+            <a href="download.html" class="btn btn-primary btn-lg">Download Course Material</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center">About Us</h3>
+            <p class="text-center mt-3">We are dedicated to providing top-notch resources for C programming enthusiasts, helping you build a strong foundation for your programming journey.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <h3 class="text-center">What We Offer</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tutorials</h5>
+                            <p class="card-text">Step-by-step guides to learn C programming from scratch.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Challenges</h5>
+                            <p class="card-text">Practice coding through a variety of programming challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">Real-world projects to apply your C programming knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section id="Developer" class="py-5">
+        <div class="container text-center">
+            <h3>Developer</h3>
+            <div class="row mt-4">
+                <div class="col-md-4 mx-auto">
+                    <img src="pdf/background2.jpg" alt="Developer Photo" class="img-fluid rounded-circle mb-5">
+                    <h5>Dhaval Vadher</h5>
+                    <p>Email: <a href="mailto:dhavalvadher704@gmail.com">dhavalvadher704@gmail.com</a></p>
+                    <p>Phone: <a href="tel:7046850466">704-685-0466</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 The C. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add the scroll effect JavaScript -->
+    <script>
+        // Add a scrolled class when the user scrolls down the page
+        window.onscroll = function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        // Random Background Image script
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const images = [
+                'https://pixabay.com/get/g8faa5cb9ad45d99227a49cb00fd15f8b48113f3280a16e82f937e40e5237c8673cc8043c8a449a05ae8af8134b69252f.jpg',
+        'https://pixabay.com/get/g8d17627120c215aacf8adc528a16170d3204fbbba1117aebf97f4bef05e38fce1a17fd70922094ba31f9d0461b593849.jpg',
+        'https://pixabay.com/get/g682b8189a166810d07c8f42855e48356493006f781208b4f370011fd2291521f84ed955a988c1e7a25957f3583e08898.jpg',
+        'https://pixabay.com/get/g01b34d239cea04c2679ae3975da7272e663b2519f83391c9dfed0c22ac168d527e9f355dd2b653b2bd9d470a7adb1e2b.jpg',
+        'https://pixabay.com/get/gfb4ac2208fc75fdb49851432650e35055bf5ae4d7da75fd75ba781e0c4942f003b96e123239671ae17022d6e748a8747.jpg',
+        'https://pixabay.com/get/g7cfa8b37eccb855010368f12bc11c7a3185b4f3b347037be9b67bc995a77109bf4f47259fb73a0af3e0f51c1f3d42244.jpg',
+        'https://pixabay.com/get/g61b9971288a3e8e761ac95d40538e8ac3509b512204a985acab94ec36c922917072a3b2a589042677bca7c5de78e2c61.jpg',
+        'https://pixabay.com/get/g579ae61d14ce6e59dd62cbf32e11f8b3842517a760ae13e1796b4d7291ebbb57cb95ed493659213701400b4026a3cd3a.jpg',
+        'https://pixabay.com/get/gc902982c44c69d9941844d3a4247820f479c17df82a9ea4c8e14107ac6542de1b1a8840bbcecd8f6802e6dbc770b5178.jpg',
+        'https://pixabay.com/get/g0a205b0d0d0b4787e6c4df6f53977ec19ef58f6d5d36515382e7caab1877bb861052cdb8a1b2b223bd2628f24dcaace7.jpg  ',
+        'https://pixabay.com/get/g1c896ad9a85574980e425deb8873e82bb6757c7f9d81dee0df39898e3b344b6732984d73c795e7720be2efe4140c5c85.jpg',
+        'https://pixabay.com/get/g6963e93a45ef12919ea6cb1b6973b5a6e5be05e7b4204e90eeb3c87e66b80dbbda12bf54e416038763decf9c8846078a.jpg',
+        'https://pixabay.com/get/g843a19dfbb254a95aa005f16ee1e0a90f3504e6db6fe94bef8b8ca78eacbc9edbda46f12f7655d266084111b6d51908d.jpg',
+        'https://pixabay.com/get/g03adaf00d63cebfabde581e1595ce79c2908ba13692b7942abdf79c091edc14ca0243b3dcf65546c9632abdfa6b928bc.jpg',
+        'https://pixabay.com/get/g673deb7dcfe6ab9bbcd37cb4baf64c996f24392102c781c0ddf00907da9dc9be30111a335d53afd2043f6513ef6c71e7.jpg'
+            ];
+
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            document.querySelector('.background-img').style.backgroundImage = `url('${randomImage}')`;
+        });
+    </script>
+</body>
+</html>
